@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -49,7 +49,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .container {
     width: 80%; }
   .column,
@@ -122,18 +122,19 @@ html {
   font-size: 62.5%; }
 body {
   font-size: 1.9em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 2.9rem;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #4d4d4d; }
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #4d4d4d; 
+  -webkit-font-smoothing: antialiased;}
 body {
 	 padding: 0px 0 50px 0;
 	 font-size: 19px;
 	 min-height: 100%;
-	 font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	 font-weight: 400;
 	 font-style: normal;
-	 line-height: 39px;
+	 line-height: 29px;
 }
 
 /* Typography
@@ -142,8 +143,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
 }
-h1 { font-size: 6.5rem; line-height: 1.2;  letter-spacing: -.1rem; font-weight: 500; }
-h2 { font-size: 5rem; line-height: 1.25; letter-spacing: -.1rem; font-weight: 500; }
+h1 { font-size: 5.5rem; line-height: 1.05;  letter-spacing: -.1rem; font-weight: 500; }
+h2 { font-size: 4rem; line-height: 1.15; font-weight: 500; }
 h3 { font-size: 3.6rem; line-height: 1.3;  letter-spacing: -.1rem; font-weight: 500; }
 h4 { font-size: 1.9rem; line-height: 1.35; letter-spacing: -.08rem; font-weight: 600; }
 h5 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: -.05rem; font-weight: 600; }
@@ -158,26 +159,26 @@ p {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 8.0rem; }
-  h2 { font-size: 5.4rem; }
+  h1 { font-size: 7rem; }
+  h2 { font-size: 4.8rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 2.3rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.8rem; }
-  p { font-size: 2.3rem; }
+  p { font-size: 2.3rem; line-height: 3.4rem;}
   blockquote {font-size: 3.6rem; }
     
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   h1 { font-size: 9.3rem; }
   h2 { font-size: 5.8rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 2.6rem; }
   h5 { font-size: 2.2rem; }
   h6 { font-size: 1.8rem; }
-  p { font-size: 2.6rem; }
+  p { font-size: 2.6rem; line-height: 3.8rem;}
 }
 
 
@@ -442,13 +443,11 @@ svg.logo {
 p.designer {
     font-size: 1.7rem;
 }
-nav {
-    width:100%;
+nav.home-nav-container {
     margin: 0 auto;
     padding-top: 2rem;
-    margin: 0 auto;
 }
-nav div a {
+nav div a.home-nav {
     font-size:1.6rem;
     letter-spacing: 0.05rem;
     float:left;
@@ -459,10 +458,18 @@ nav div a {
     text-decoration: none;
     color: #acb3b6;
 }
+nav div a:hover {
+    color: #3cbebc;
+}
 a.nav-active {
     font-size: 2.2rem;
     color: #3cbebc;
     border-bottom: solid 2px;
+    float:left;
+    display: inline;
+    width: 29%;  
+    padding: .2rem 0;
+    margin: 0 0.7rem;
 }
 
 @media (min-width: 400px) {
@@ -472,7 +479,7 @@ a.nav-active {
 
 @media (min-width: 550px) {
     .logo-header { width: 30rem; }
-    nav { width: 34rem; }
+    nav.home-nav-container { width: 34rem; }
 }
 
 @media (min-width: 750px) {
@@ -480,7 +487,7 @@ a.nav-active {
     svg.logo {width: 12rem; padding-top: 1.8rem; }
     .name { font-size: 3.2rem; padding-top: 2rem; }
     p.designer { font-size: 1.7rem; padding-bottom: 0.5rem; }
-    nav { width: 36rem; }
+    nav.home-nav-container { width: 36rem; }
 }
 
 @media (min-width: 1000px) {
@@ -488,9 +495,9 @@ a.nav-active {
     svg.logo { width: 16rem; padding-top: 3.2rem; }
     .name { font-size: 4.4rem; padding-top: 3.2rem; }
     p.designer { font-size: 2.1rem; padding-top: 1rem; padding-bottom: 2rem; }
-    nav { width: 49rem; padding-top: 2rem; }
-    nav div a { width: 29%; margin: 2.4rem 1rem; padding-bottom: 1rem; font-size: 2rem; }
-    a.nav-active { font-size: 3rem; }
+    nav.home-nav-container { width: 49rem; padding-top: 2rem; }
+    nav div a.home-nav { width: 29%; margin: 2.4rem 1rem; padding-bottom: 1rem; font-size: 2rem; }
+    a.nav-active { font-size: 3rem; margin: 2.4rem 1rem; padding-bottom: 1rem;}
 }
 
 @media (min-width: 1200px) {
@@ -498,9 +505,9 @@ a.nav-active {
     svg.logo {width: 21rem; padding-top: 5.8rem; }
     .name { font-size: 5.6rem; padding-top: 4.2rem; }
     p.designer { font-size: 2.3rem; padding-top: 2rem; padding-bottom: 3.3rem; }
-    nav { width: 62rem; }
-    nav div a { width: 29%; margin: 3.6rem 1.2rem; padding-bottom: 1.8rem; font-size: 2.5rem; }
-    a.nav-active { font-size: 3.6rem; }
+    nav.home-nav-container { width: 62rem; }
+    nav div a.home-nav { width: 29%; margin: 3.6rem 1.2rem; padding-bottom: 1.8rem; font-size: 2.5rem; }
+    a.nav-active { margin: 3.6rem 1.2rem; padding-bottom: 1.8rem; font-size: 3.9rem; }
     
 }
 
@@ -520,12 +527,103 @@ a.nav-active {
     line-height: 3rem;
 }
 
-/* Larger than desktop */
-@media (min-width: 550px) {
+/* Larger than phablet */
+@media (min-width: 750px) {
     .work-left { text-align: left; }
     .work-right { text-align: right; }
 }
 
+/* Smaller than tablet */
+@media (max-width: 550px) {
+    .order-1 { order:1; }
+    .order-2 { order:2; }
+    .flex { display: flex; flex-flow:column; }
+}
+
+/* Case Studies
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.souschef-stove-intro {
+    background: url('souschef-hero-bw.jpg') bottom center no-repeat; 
+    background-size: cover;
+    margin-bottom: 5rem;
+}
+
+.logo-position {
+    text-align: center;
+    margin-top: 5rem;
+}
+.logo-cs {
+    width: 3rem;
+}
+.cs-name-white {
+    color: #FFFFFF;
+    letter-spacing: 0.1rem;
+}
+.cs-nav {
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.cs-nav-display {
+    display: inline;
+    margin: 0rem 0.9rem;
+    color: #e2e2e2;
+}
+.cs-title {
+    margin-top: 5rem;
+    color: #FFFFFF;
+    letter-spacing: 0.1rem;
+}
+
+a.cs-nav-color{
+    color: #e2e2e2;
+}
+
+.project-time {
+    color: #3cbebc;
+    font-style: italic;
+    font-size: 2.2rem;
+}
+.project-process {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #e2e2e2;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    padding-bottom: 4rem;
+}
+.cs-section {
+    margin-bottom: 4rem;
+}
+.title-centered {
+    text-align: center;
+}
+
+@media (min-width: 550px) { 
+    .cs-title { width: 50rem; margin: 0 auto; padding: 7rem 0 3rem 0; }
+    .project-process { width: 40rem; margin: 0 auto; padding-bottom: 6rem; }
+    .title-centered { margin-bottom: 3rem;}
+    .cs-section { margin-bottom: 5rem; }
+}
+
+@media (min-width: 750px) {
+    .logo-position { text-align: left; }
+    .logo-cs { margin-top: 4rem; display: inline; }
+    .cs-name-white { margin-top: 4rem; padding-left: 1rem; display: inline; }
+    .cs-nav { margin-top: 9.8rem; padding-top: 0rem; }
+    .project-process { width: 40rem; line-height: 2.5rem; margin: 0 auto; padding-bottom: 8rem; }
+    .float-right{ text-align: right; }
+    .souschef-stove-intro { margin-bottom: 6rem;}
+    .title-centered { margin-bottom: 4rem;}
+    .cs-section { margin-bottom: 6rem; }
+}
+
+@media (min-width: 1000px){
+    .cs-title { width: 50rem; margin: 0 auto; padding: 7rem 0 3rem 0; }
+    .project-time { font-size: 2.6rem; }
+    .project-process { font-size: 2rem; width: 45rem; line-height: 3.2rem; margin: 0 auto; padding-bottom: 8rem; }
+    .souschef-stove-intro { margin-bottom: 10rem;}
+    .title-centered { margin-bottom: 5rem;}
+    .cs-section { margin-bottom: 7rem; }
+}
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer-rule {
