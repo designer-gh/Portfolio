@@ -148,6 +148,7 @@
         <blockquote>"I would spend extra money for safety alone. You can't put a price on safety."</blockquote>
     </div>    
 </div>     
+    
 <!-- We Found Our Target -->
 <div class="cs-section light-gray-section"> 
     <div class="container"> 
@@ -201,7 +202,11 @@
                 As Sous Chef was breaking new ground, I wanted to get ideas down fast and get to testing early in the process. The project scope focused on the stove’s built-in screen’s UI. However, I did conclude that the stovetop had to have induction burners for anyone to feel safe using the smart features. Next to the screen, users can control burners with touch dials and power buttons as quickly as they would on a traditional stove.
             </p>
     </div>
-    <div class="img-centered"><img class="u-max-full-width" src="images/ss-stove/stove-sketch.jpg"/></div>
+    <div class="img-centered" style="margin-bottom:10%">
+        <img class="u-max-full-width" src="images/ss-stove/stove-sketch.jpg"/>
+        <p class="img-descriptor">An early sketch of the Sous Chef stove top</p>
+    </div>
+    
     <div class="container">
         <div>
             <h3 class="h4-title-centered">User Flow</h3>
@@ -212,57 +217,331 @@
             <h3 class="h4-title-centered" style="margin-top:10%">Wireframes</h3>
             <p>From the insight gleaned from research, I landed on four smart features for the MVP: </p>
             <div>
-                <img style="margin-top:7%" src="images/ss-stove/wireframe-timecook.svg" alt="Image of Timed Cooking Wireframe" onerror="this.src='images/ss-stove/wireframe-timecook.png'"/>
+                <img class="u-max-full-width" style="margin-top:7%" src="images/ss-stove/wireframe-timecook.svg" alt="Image of Timed Cooking Wireframe" onerror="this.src='images/ss-stove/wireframe-timecook.png'"/>
                 <h4 class="line-space" style="margin-top:3%">Timed Cooking</h4>
                 <p>Sous Chef adds more value to the good old kitchen timer by assigning it to a burner and adding an action after the timer goes off. </p>
             </div>
             <div>
-                <img style="margin-top:7%" src="images/ss-stove/wireframe-tempcontrol.svg" alt="Image of Temperature Control Wireframe" onerror="this.src='images/ss-stove/wireframe-tempcontrol.png'"/>
+                <img class="u-max-full-width" style="margin-top:7%" src="images/ss-stove/wireframe-tempcontrol.svg" alt="Image of Temperature Control Wireframe" onerror="this.src='images/ss-stove/wireframe-tempcontrol.png'"/>
                 <h4 class="line-space" style="margin-top:3%">Temperature Control</h4>
                 <p>With a clip-on thermometer connected to Sous Chef via wi-fi, stovetop temperature control cooking methods like sous-vide and deep fry are possible without extra appliances taking up counter space. </p>
             </div>
             <div>
-                <img style="margin-top:7%" src="images/ss-stove/wireframe-autotask.svg" alt="Image of Automated Tasks Wireframe" onerror="this.src='images/ss-stove/wireframe-autotask.png'"/>
+                <img class="u-max-full-width" style="margin-top:7%" src="images/ss-stove/wireframe-autotask.svg" alt="Image of Automated Tasks Wireframe" onerror="this.src='images/ss-stove/wireframe-autotask.png'"/>
                 <h4 class="line-space" style="margin-top:3%">Automated Tasks</h4>
                 <p>Sous Chef can perform regularly occurring tasks on a repeating schedule. </p>
             </div>
             <div>
-                <img style="margin-top:7%" src="images/ss-stove/wireframe-safety.svg" alt="Image of Safety Wireframe" onerror="this.src='images/ss-stove/wireframe-safety.png'"/>
+                <img class="u-max-full-width" style="margin-top:7%" src="images/ss-stove/wireframe-safety.svg" alt="Image of Safety Wireframe" onerror="this.src='images/ss-stove/wireframe-safety.png'"/>
                 <h4 class="line-space" style="margin-top:3%">Safety</h4>
                 <p>Sous Chef's cooktop surface senses when something boils over and turns down the heat. </p>
             </div>
         </div>    
     </div>
 </div>    
+
+<!-- Testing Early -->
+<div class="cs-section"> 
+    <div class="container"> 
+        <h2 class="title-centered">Testing Early</h2>
+            <p>
+                Once the concept was ready for feedback, I created a prototype through Invision. I tested the flow and navigation with users on an iPad placed on a surface of a stove to replicate a real environment. Users were asked to completed three tasks: 
+            </p>
+            <p style="padding-left:3rem">1) Turn on a burner and add a timer</p>
+            <p style="padding-left:3rem">2) Cook a steak using the guided sous-vide cooking method</p>
+            <p style="padding-left:3rem">3) Create an Automated Task to recur every weekday</p>
+            <div style="margin-top:7%"><img class="u-max-full-width" src="images/ss-stove/testing.jpg" alt="Image of User Test on Stove"/></div>
+        
+    </div>
+</div>    
     
-    
-    
-    
-<!-- Beauty Image -->
-<div class="section">
-    <img class="u-max-full-width" src="images/ss-stove/souschef-hero.jpg"/>
+<!-- What I Learned -->
+<div class="light-gray-section"> 
+    <div class="container"> 
+        <h2 class="title-centered">What I Learned</h2>
+        <div style= "margin-top: 10%">
+            <h3 class="h4-title-centered teal">When There Is Information Overload</h3>
+            <p>The navigation overall was highly intuitive. The only area where users seemed to stumble a bit was in the Timed Cooking flow. There was too much information and and too many call-to-actions on one page. Half the users took a bit of time to digest the information and figure out what they needed to do.</p>
+            <div style="margin-top:7%">
+                <img class="u-max-full-width" src="images/ss-stove/test-tmi.png" alt="Image of Timed Cooking Wireframe"/>
+            </div>
+            <p class="test-descriptor">“I’m not sure if I understand how the timer and actions are linked.”</p>
+        </div>
+        <div style= "margin-top: 10%">
+            <h3 class="h4-title-centered teal">Sometimes Too Automated Is Too Scary</h3>
+            <p>Users found the idea of setting automated tasks for common tasks they perform everyday very useful. However, they were concerned with the possibility of forgetting to cancel a recurring task on holidays or if they forgot to fill a pot of water to heat. </p>
+            <div style="margin-top:7%">
+                <img class="u-max-full-width" src="images/ss-stove/test-auto.png" alt="Image of Automated Task Wireframe"/>
+            </div>
+            <p class="test-descriptor">“Wait…what about when I’m on vacation? What if I forget to cancel a task? This is worrisome.”</p>
+        </div>
+        <div style= "margin-top: 10%">
+            <h3 class="h4-title-centered teal">Clarity Is Key</h3>
+            <p>Users found it confusing as to what they had the option of changing in the carousels. For example, if I am able to adjust the hour as well as the minutes in for the timer, then they need to be separated from each other.</p>
+            <div style="margin-top:7%">
+                <img class="u-max-full-width" src="images/ss-stove/test-clarity.png" alt="Image of Time Dial"/>
+            </div>
+            <p class="test-descriptor">“Unclear which metrics are changeable.”</p>
+        </div>
+        <div style= "margin-top: 10%">
+            <h3 class="h4-title-centered teal">Educational Tips</h3>
+            <p>While users were able to perform tasks asked of them and navigate through screens successfully, they didn’t always understand how they might incorporate some of the features into their routine. For example, someone who regularly sets a tea kettle to boil in the morning may not know what temperature is ideal for steeping their tea nor are they able to control it easily. Adding tips strategically can empower and educate the user, making our smart features more relevant and easy to use.</p>
+            <div style="margin-top:7%">
+                <img class="u-max-full-width" src="images/ss-stove/test-tips.png" alt="Image of Temperature Options Wireframe"/>
+            </div>
+            <p class="test-descriptor">“Hm…not sure which temperature I should select. I usually just set a burner to high and boil.”</p>
+        </div>
+    </div>
 </div>
     
-<!-- Inset Panel -->
-<div class="cs-section learned-bg "> 
-    <div class="container border-box"> 
-        <h3 class="title-centered">Observations</h3>
-        <h4 class="line-space">Assistance Over Automation</h4>
-        <p>Cooking enthusiasts want more control over their cooking rather than less. They wanted an assistant that enabled them as the “executive chef” versus a robot that took over the entire cooking process. 
+<!-- What I Made -->
+<div class="section what-I-made">
+</div>
+<div class="cs-section"> 
+    <div class="container"> 
+        <h2 class="title-centered">What I Made</h2>
+    </div>
+
+    <div class="container">
+        <div>
+            <h3 class="h4-title-centered">A Minimalistic Intuitive Interface</h3>
+            <p>As a modern luxury appliance, Sous Chef employs a sleek minimalistic visual language that emphasizes its ease of use and premium quality. The stove’s flat surface free of dials and knobs places the emphasis on the action happening on the surface—the cooking. Its minimalistic appearance creates an environment for the user that is simpler and supports the idea that Sous Chef is managing the behind the scenes (heat, timing, upcoming steps.)</p>
+            <p>From the beginning, my goal was to have an interface that was simple and intuitive. The less time the user spends trying to accomplish their task on screen, the more quickly they can get to cooking, the better the experience. Sous Chef is the smart kitchen assistant and not a complicated machine with bloated features.</p>
+            <p>To guide users through the smart features and new cooking process, Sous Chef’s interface breaks down information into digestible chunks. The interface employs dimensional controls that mimic the familiar experience of turning a dial or pushing a button. With an intuitive navigation, the interface eases the transition from traditional stove with physical dials and buttons to a flat stovetop with touch controls.</p>
+        </div>
+    </div>
+</div> 
+<div class="section ui-elements">
+</div>    
+<div class="cs-section"> 
+    <p class="img-descriptor">Realistic dials and buttons create familiarity.</p>
+</div>   
+    
+
+<div class="cs-section"> 
+    <div class="container"> 
+        <h3 class="title-centered">Timed Cooking</h3>
+        <p>
+                In our interviews, many individuals expressed frustration in managing multiple dishes. There were many sad cases of overcooked pasta and horrifying experiences of burning steaks because they lost track of time or needed an extra set of hands. Some users reported using a timer in their cooking. In this case, users have to attach their own meaning to what should happen after the alarm goes off and complete that action themselves.
         </p>
-        <h4 class="line-space">Points of Stress</h4>
-        <p>The most stressful times of the day occur when trying to get out the door in the morning and getting dinner ready on time. The features of Sous Chef largely focused on alleviating these points of stress.
+        <p>
+                Timed cooking streamlines this process and allows the user to manage their cooking process more effectively. Each burner can be assigned a timer and gives the option to execute an action after the timer goes off.
         </p>
-        <h4 class="line-space">Safety First</h4>
-        <p>Sous Chef had to prove to be safe first before consumers would consider any of its smart features. Parents with young kids and adults with elderly parents especially are safety-conscious. In fact, safety was the strongest motivator for paying the premium for a smart stove. 
+        <div class="img-centered" style="margin-top:7%">
+                <img class="u-max-full-width" src="images/ss-stove/final-timed.png" alt="Images of Final Timed Cooking Screens"/>
+        </div>
+        <div style="margin-top:7%">
+            <video class="u-max-full-width" src="images/ss-stove/SousChef_Stove_TimedCooking.mp4" preload autoplay="autoplay" loop="loop"></video>
+            <p class="img-descriptor" style="margin-top:3%">The timed cooking flow mimics a timeline that the user can navigate back and forth in chronological order. As the user selects each time or action, the next set of options slide over. </p>
+        </div>
+    </div>
+</div>
+
+<div class="cs-section"> 
+    <div class="container"> 
+        <h3 class="title-centered">Temperature Control</h3>
+        <p>
+                Cooking enthusiasts want more precision in their cooking and access to cooking methods that didn’t crowd their counter space with single-purpose cooking appliances. With the help of a clip-on thermometer that connects to Sous Chef via wi-fi, Sous Chef can maintain the temperature of a pot. Cooks can sous-vide, deep fry, or heat water at a constant temperature managed by Sous Chef.
         </p>
-        <h4 class="line-space">Task Management</h4>
-        <p>Managing the stove, following a recipe, and meal planning while trying to watch young children and complete house chores…modern life gets busy. People are looking for ways complete tasks more easily and increase control over their time. Many use timers while they multitask, and sometimes forget which timer was set for which task.
+        <p>
+                Knowledgeable chefs can use manual mode to enter the desired temperature and time to cook their meals. The guided mode provides beginners step-by-step guidance to a perfectly cooked meal.
         </p>
-        <h4 class="line-space">Routine Opportunities</h4>
-        <p>There is a lot of water boiling and toasting happening in the morning. I aimed to cut down the number of steps in morning routines and get the user out the door more quickly.
+        <div class="img-centered" style="margin-top:7%">
+            <img class="u-max-full-width" src="images/ss-stove/final-tempcontrol.png" alt="Images of Final Temperature Control Screens"/>
+            <p class="img-descriptor" style="margin-top:3%">Guided Cooking takes users through step-by-step instructions and shows the progress of cooking. Cooking progress can be synced with their phones if they download the companion app.</p>
+        </div>
+    </div>
+</div>
+
+<div class="cs-section"> 
+    <div class="container"> 
+        <h3 class="title-centered">Automated Tasks</h3>
+        <p>
+                One of the most stressful times of the day is trying to get yourself out the door in time for work. The most common morning tasks included heating water and toasting bread. I saw an opportunity to cut down the number of steps in their morning routine with automated actions scheduled the night before.
         </p>
-        
+        <p>
+                From testing, I learned that setting a task to repeat was concerning for users. What if they forgot to cancel a task on a holiday and the stove turned on? Instead of recurring tasks, automated tasks became a collection of custom presets. In either case, prep work, such as filling a pot or placing bread in the oven, is required from the user. If the user is required to be at the stove, it made sense for the user to schedule a task at this point of contact.
+        </p>
+        <div class="img-centered" style="margin-top:7%">
+            <img class="u-max-full-width" src="images/ss-stove/final-at-schedule.png" alt="Images of Final Automated Tasks Schedule Screen"/>
+            <p class="img-descriptor" style="margin-top:3%">Users can schedule an Automated Task like heating water or toasting bread.</p>
+        </div>
+        <div class="img-centered" style="margin-top:7%">
+            <img class="u-max-full-width" src="images/ss-stove/final-at-presets.png" alt="Images of Final Automated Tasks Presets Screen"/>
+            <p class="img-descriptor" style="margin-top:3%">Users schedule a task by selecting from a collection of presets.</p>
+        </div>
+        <div class="img-centered" style="margin-top:7%">
+            <img class="u-max-full-width" src="images/ss-stove/final-at-temp.png" alt="Images of Final Automated Tasks New Task Screen"/>
+            <p class="img-descriptor" style="margin-top:3%">When creating a new task, users can select heat by specifying the temperature or by task.</p>
+        </div>
+        <div class="img-centered"><a href="https://marvelapp.com/i69g4a" class="button">FULL PROTOTYPE</a> </div>
+    </div>
+</div>
+    
+<!-- Branding Sous Chef -->
+<div class="cs-section gradient-bg">
+    <div class="img-centered"> 
+    <svg class="logo-samsung" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 230.5 87.6" style="enable-background:new 0 0 230.5 87.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M126.4,15.7L126.4,15.7c0,0-2.3-1.4-3.6-1.9c-0.2-0.1-4.3-2-5.2-3c0,0-1.7-1.6-0.7-3.5c0,0,0.4-1.2,2.2-1.2
+		c0,0,2.4,0.2,2.4,2.1v2.6h8.1l0-3.9c0,0,0.2-2-1.4-3.8c-1.6-1.8-4.4-2.8-8.3-2.9c-0.1,0-8.1-0.5-10.4,3.8l0,0c0,0-0.9,1-0.9,4.3
+		v2.5c0,0-0.1,2.8,1.3,4.6c0,0,0.8,1.2,2.8,2.5c0,0,4.1,2.2,6.6,3.5c0,0,2.5,1.5,2.2,3.8c0,0-0.2,2.3-2.5,2.3c0,0-0.1,0-0.1,0
+		c0,0-2.3-0.1-2.3-2.4v-2.6h-8.6v3.8c0,0-0.1,2.4,1.9,4.4c1.9,1.9,4.9,2.9,9.1,2.9c0.1,0,10.7,0.1,11.2-7.5v-3.1
+		C130.1,22.9,130.5,18.1,126.4,15.7z"/>
+	<polygon class="st0" points="84.2,1.2 81.4,18.5 80.7,18.5 78,1.3 64.4,1.3 63.7,32.5 71.7,32.5 71.8,8.9 72.6,8.9 72.6,9 
+		76.9,32.5 85.4,32.5 89.6,8.9 90.3,8.9 90.3,9 90.5,32.5 98.6,32.5 97.7,1.2 	"/>
+	<polygon class="st0" points="35.6,1.3 30.2,32.5 38.8,32.5 42.1,8.2 42.9,8.2 42.9,8.3 46.1,32.5 54.8,32.5 49.4,1.3 	"/>
+	<path class="st0" d="M222.3,24.8c0,2.5-2.1,2.5-2.1,2.5c-0.8,0-1.4-0.2-1.9-0.7c-0.7-0.7-0.6-1.7-0.6-1.7V7.8
+		c0-1.8,2.3-1.9,2.3-1.9c2.2,0,2.2,2.2,2.2,2.2v2.5h8.1c0.3-4.9-0.7-6.2-0.7-6.2l0,0C227.7,0.2,221.1,0,220,0c-0.1,0-0.2,0-0.2,0
+		c-4,0-7,1-8.7,3.1c-2.2,2.6-1.8,5.9-1.8,6l0,16.6c0.1,2,0.8,3.7,2.2,5c3.3,3,9.3,2.7,9.9,2.7c5.1-0.6,6.8-2.2,6.8-2.2
+		c1.4-1.1,1.8-2.5,1.8-2.5c0.4-0.9,0.5-3.6,0.5-3.6v-9.7H220v4.5h2.3V24.8z"/>
+	<polygon class="st0" points="192.6,20.3 192.1,20.3 192.1,20.3 183.7,1.2 173.8,1.2 173.8,32.5 181.8,32.5 181.3,13.4 181.8,13.4 
+		181.8,13.4 190.5,32.5 200.1,32.5 200.1,1.2 192,1.2 	"/>
+	<path class="st0" d="M153.1,26.8c-0.4,0.4-1,0.6-1.7,0.6c0,0-1.1,0.1-1.9-0.7c-0.5-0.5-0.7-1.1-0.7-1.9l0-23.6H140v23.4
+		c0,0-0.3,3.1,2,5.6c2,2.2,5.2,3.3,9.6,3.3c0,0,0,0,0,0c0.3,0,5.7,0,8.7-3.1c1.4-1.4,2.1-3.2,2.1-5.4V1.2h-8.6v23.6
+		C153.8,24.8,153.9,26,153.1,26.8z"/>
+	<path class="st0" d="M18.4,15.7L18.4,15.7c0,0-2.3-1.4-3.6-1.9c-0.2-0.1-4.3-2-5.2-3c0,0-1.7-1.6-0.7-3.5c0,0,0.4-1.2,2.2-1.2
+		c0,0,2.4,0.2,2.4,2.1v2.6h8.1l0-3.9c0,0,0.2-2-1.4-3.8c-1.6-1.8-4.4-2.8-8.3-2.9c0,0-0.8,0-1.9,0c0,0-1.6,0.1-3.4,0.6
+		C5,1.3,2.8,2.2,1.6,4c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0-0.9,1-0.9,4.3v2.5c0,0-0.1,2.8,1.3,4.6c0,0,0.8,1.2,2.8,2.5
+		c0,0,4.1,2.2,6.6,3.5c0,0,2.5,1.5,2.2,3.8c0,0-0.2,2.3-2.5,2.3c0,0-0.1,0-0.1,0c0,0-2.3-0.1-2.3-2.4v-2.6H0v3.8
+		c0,0-0.1,2.4,1.9,4.4c1.9,1.9,4.9,2.9,9.1,2.9c0.1,0,10.7,0.1,11.2-7.5l0-3.1C22.2,22.9,22.5,18.1,18.4,15.7z"/>
+</g>
+<g>
+	<g>
+		<path class="st0" d="M45.8,66.6c-0.1-1.2-0.3-2.3-0.8-3.2c-0.5-0.9-1.1-1.7-1.9-2.3c-0.8-0.6-1.7-1.1-2.8-1.4
+			c-1.1-0.3-2.3-0.5-3.6-0.5c-0.8,0-1.7,0.1-2.6,0.3c-0.9,0.2-1.8,0.5-2.5,1c-0.8,0.5-1.4,1.1-1.9,1.9c-0.5,0.8-0.8,1.8-0.8,2.9
+			c0,1.1,0.3,2.1,0.8,2.8c0.6,0.7,1.3,1.3,2.2,1.7c0.9,0.4,1.9,0.8,3.1,1.1c1.2,0.3,2.3,0.5,3.5,0.8c1.2,0.2,2.4,0.5,3.6,0.9
+			c1.2,0.3,2.2,0.8,3.1,1.4c0.9,0.6,1.7,1.3,2.2,2.2c0.6,0.9,0.8,2.1,0.8,3.4c0,1.5-0.3,2.7-1,3.7c-0.6,1-1.4,1.8-2.4,2.5
+			c-1,0.6-2,1.1-3.2,1.4c-1.2,0.3-2.3,0.4-3.4,0.4c-1.7,0-3.2-0.2-4.7-0.5s-2.7-0.9-3.8-1.8c-1.1-0.8-1.9-1.9-2.6-3.1
+			c-0.6-1.3-0.9-2.8-0.9-4.7H28c-0.1,1.6,0.1,2.9,0.7,4s1.3,2,2.2,2.6c0.9,0.7,2.1,1.2,3.3,1.5c1.3,0.3,2.6,0.5,4,0.5
+			c0.8,0,1.8-0.1,2.7-0.3c1-0.2,1.9-0.6,2.7-1.1c0.8-0.5,1.5-1.2,2-2c0.5-0.8,0.8-1.9,0.8-3.1c0-1.2-0.3-2.2-0.8-2.9
+			c-0.6-0.8-1.3-1.4-2.2-1.8s-2-0.8-3.1-1.1c-1.2-0.3-2.3-0.5-3.6-0.8c-1.2-0.2-2.4-0.5-3.5-0.8c-1.2-0.3-2.2-0.7-3.1-1.3
+			c-0.9-0.5-1.6-1.2-2.2-2.1c-0.6-0.9-0.8-2-0.8-3.3s0.3-2.5,0.9-3.5c0.6-1,1.3-1.8,2.2-2.3s1.9-1,3.1-1.3c1.1-0.3,2.3-0.4,3.4-0.4
+			c1.5,0,2.9,0.2,4.2,0.5c1.3,0.3,2.4,0.8,3.4,1.6s1.7,1.6,2.3,2.7c0.6,1.1,0.9,2.5,1,4H45.8z"/>
+		<path class="st0" d="M51.6,76.7c0-1.5,0.2-2.8,0.6-4.1c0.4-1.3,1-2.4,1.8-3.4c0.8-1,1.8-1.8,2.9-2.3c1.2-0.6,2.5-0.9,4-0.9
+			c1.5,0,2.9,0.3,4,0.9c1.2,0.6,2.1,1.3,2.9,2.3c0.8,1,1.4,2.1,1.8,3.4c0.4,1.3,0.6,2.7,0.6,4.1c0,1.5-0.2,2.8-0.6,4.1
+			c-0.4,1.3-1,2.4-1.8,3.4c-0.8,1-1.8,1.7-2.9,2.3c-1.2,0.6-2.5,0.9-4,0.9c-1.5,0-2.9-0.3-4-0.9c-1.2-0.6-2.1-1.3-2.9-2.3
+			c-0.8-1-1.4-2.1-1.8-3.4C51.8,79.5,51.6,78.2,51.6,76.7z M53.1,76.7c0,1.2,0.2,2.4,0.5,3.5c0.3,1.1,0.8,2.1,1.5,3
+			c0.7,0.9,1.5,1.6,2.5,2.1c1,0.5,2.1,0.8,3.4,0.8c1.3,0,2.4-0.3,3.4-0.8c1-0.5,1.8-1.2,2.5-2.1c0.7-0.9,1.2-1.9,1.5-3
+			c0.3-1.1,0.5-2.3,0.5-3.5s-0.2-2.4-0.5-3.5c-0.3-1.1-0.8-2.1-1.5-3c-0.7-0.9-1.5-1.6-2.5-2.1c-1-0.5-2.1-0.8-3.4-0.8
+			c-1.3,0-2.4,0.3-3.4,0.8c-1,0.5-1.8,1.2-2.5,2.1c-0.7,0.9-1.2,1.9-1.5,3C53.3,74.3,53.1,75.5,53.1,76.7z"/>
+		<path class="st0" d="M90.7,86.9h-1.5v-4.4h-0.1c-0.3,0.8-0.6,1.5-1.1,2c-0.5,0.6-1.1,1.1-1.7,1.5c-0.7,0.4-1.4,0.7-2.1,1
+			c-0.8,0.2-1.6,0.3-2.3,0.3c-1.2,0-2.2-0.1-3-0.4c-0.8-0.3-1.5-0.7-2.1-1.2c-0.5-0.5-0.9-1-1.3-1.6c-0.3-0.6-0.5-1.2-0.7-1.8
+			c-0.1-0.6-0.2-1.2-0.2-1.8c0-0.6,0-1.1,0-1.5V66.5H76v12.9c0,0.5,0,1.2,0.1,1.9c0.1,0.8,0.3,1.5,0.7,2.2c0.4,0.7,1,1.3,1.7,1.8
+			c0.8,0.5,1.9,0.8,3.3,0.8c1.1,0,2.2-0.2,3.1-0.6s1.7-1,2.3-1.8c0.6-0.8,1.1-1.7,1.5-2.7c0.3-1,0.5-2.2,0.5-3.4V66.5h1.5V86.9z"/>
+		<path class="st0" d="M96.5,80.1c0.1,1,0.3,1.8,0.6,2.5c0.4,0.7,0.9,1.4,1.5,1.9s1.3,0.9,2.1,1.2c0.8,0.3,1.7,0.4,2.6,0.4
+			c0.7,0,1.4-0.1,2.1-0.2c0.8-0.1,1.5-0.3,2.1-0.7c0.6-0.3,1.2-0.8,1.6-1.3c0.4-0.6,0.6-1.3,0.6-2.2c0-1.1-0.3-2-1-2.6
+			c-0.7-0.6-1.6-1-2.6-1.4c-1-0.3-2.2-0.6-3.4-0.8c-1.2-0.2-2.3-0.5-3.4-0.9c-1-0.4-1.9-1-2.6-1.7c-0.7-0.7-1-1.8-1-3.2
+			c0-1,0.2-1.9,0.7-2.5c0.5-0.7,1-1.2,1.7-1.6c0.7-0.4,1.5-0.7,2.4-0.9c0.9-0.2,1.8-0.3,2.6-0.3c1.1,0,2.1,0.1,3,0.4
+			c0.9,0.2,1.7,0.6,2.4,1.2c0.7,0.5,1.2,1.2,1.6,2c0.4,0.8,0.6,1.8,0.6,3h-1.5c0-0.9-0.2-1.7-0.5-2.4c-0.3-0.7-0.7-1.2-1.3-1.6
+			c-0.5-0.4-1.2-0.7-1.9-0.9c-0.7-0.2-1.5-0.3-2.4-0.3c-0.7,0-1.4,0.1-2.1,0.2c-0.7,0.1-1.3,0.4-1.9,0.7c-0.6,0.3-1,0.7-1.4,1.2
+			s-0.5,1.1-0.5,1.8c0,0.8,0.2,1.5,0.6,2s0.9,0.9,1.6,1.2c0.6,0.3,1.4,0.6,2.2,0.7c0.8,0.2,1.6,0.4,2.4,0.6c1,0.2,2,0.4,2.8,0.7
+			c0.9,0.3,1.7,0.6,2.3,1c0.6,0.4,1.2,1,1.5,1.7c0.4,0.7,0.6,1.6,0.6,2.6c0,1.1-0.3,2-0.8,2.7c-0.5,0.7-1.1,1.3-1.9,1.7
+			c-0.8,0.4-1.6,0.7-2.6,0.9c-0.9,0.2-1.9,0.3-2.8,0.3c-1.2,0-2.2-0.2-3.2-0.5s-1.9-0.8-2.6-1.4c-0.7-0.6-1.3-1.4-1.8-2.3
+			c-0.4-0.9-0.7-2-0.7-3.1H96.5z"/>
+		<path class="st0" d="M126.2,72.7c0-2.1,0.3-4,0.9-5.8c0.6-1.8,1.5-3.4,2.6-4.7s2.6-2.4,4.3-3.2s3.6-1.2,5.7-1.2
+			c1.7,0,3.1,0.2,4.3,0.7c1.2,0.4,2.2,1,3.1,1.6s1.5,1.4,2,2.1c0.5,0.8,0.9,1.5,1.2,2.2c0.3,0.7,0.5,1.3,0.6,1.8
+			c0.1,0.5,0.2,0.8,0.2,0.8h-1.8c-0.2-1.2-0.6-2.3-1.2-3.2c-0.6-0.9-1.3-1.7-2.2-2.4s-1.9-1.2-2.9-1.5c-1.1-0.3-2.2-0.5-3.4-0.5
+			c-1.9,0-3.5,0.4-5,1.1c-1.5,0.7-2.7,1.7-3.7,2.9c-1,1.2-1.8,2.6-2.3,4.2c-0.5,1.6-0.8,3.3-0.8,5.2s0.3,3.6,0.8,5.2
+			c0.5,1.6,1.3,3,2.3,4.2c1,1.2,2.2,2.2,3.7,2.9c1.5,0.7,3.1,1.1,5,1.1c1.4,0,2.7-0.3,3.9-0.9c1.2-0.6,2.3-1.3,3.2-2.3
+			c0.9-0.9,1.6-2,2.2-3.3c0.5-1.2,0.9-2.5,0.9-3.8h1.8c-0.2,1.7-0.6,3.3-1.3,4.7c-0.7,1.4-1.5,2.7-2.6,3.7c-1,1-2.3,1.9-3.6,2.4
+			c-1.4,0.6-2.9,0.9-4.4,0.9c-2.1,0-4-0.4-5.7-1.2s-3.1-1.8-4.3-3.2c-1.2-1.3-2-2.9-2.6-4.7S126.2,74.8,126.2,72.7z"/>
+		<path class="st0" d="M157.1,58.5v12.3h0.1c0.3-0.8,0.6-1.5,1.1-2c0.5-0.6,1.1-1.1,1.7-1.5c0.6-0.4,1.4-0.7,2.1-1
+			c0.8-0.2,1.6-0.3,2.3-0.3c1.2,0,2.2,0.1,3,0.4c0.8,0.3,1.5,0.7,2,1.2c0.5,0.5,0.9,1,1.3,1.6c0.3,0.6,0.5,1.2,0.7,1.8
+			c0.1,0.6,0.2,1.2,0.2,1.8c0,0.6,0,1.1,0,1.5v12.7h-1.5V74c0-0.5,0-1.1-0.1-1.9c-0.1-0.8-0.3-1.5-0.7-2.2c-0.4-0.7-1-1.3-1.8-1.8
+			c-0.8-0.5-1.9-0.8-3.2-0.8c-1.2,0-2.2,0.2-3.1,0.6c-0.9,0.4-1.7,1-2.3,1.8c-0.6,0.8-1.1,1.7-1.5,2.7c-0.3,1-0.5,2.2-0.5,3.4v11.1
+			h-1.5V58.5H157.1z"/>
+		<path class="st0" d="M177.5,76.9v0.2c0,1.2,0.2,2.3,0.5,3.4c0.3,1.1,0.8,2,1.4,2.9c0.6,0.8,1.4,1.5,2.4,2s2,0.7,3.3,0.7
+			c2,0,3.7-0.5,4.9-1.6c1.2-1.1,2-2.6,2.5-4.5h1.5c-0.5,2.4-1.4,4.2-2.9,5.5c-1.5,1.3-3.5,1.9-6,1.9c-1.5,0-2.8-0.3-4-0.8
+			c-1.1-0.5-2.1-1.3-2.8-2.2c-0.8-0.9-1.3-2.1-1.7-3.3c-0.4-1.3-0.6-2.7-0.6-4.2c0-1.4,0.2-2.8,0.6-4.1s1-2.5,1.7-3.5
+			c0.8-1,1.7-1.8,2.9-2.4c1.2-0.6,2.5-0.9,4.1-0.9c1.4,0,2.7,0.3,3.8,0.8c1.1,0.5,2,1.3,2.8,2.2c0.7,0.9,1.3,2,1.7,3.2
+			c0.4,1.2,0.6,2.5,0.6,3.9c0,0.1,0,0.3,0,0.5c0,0.2,0,0.3,0,0.4H177.5z M192.5,75.6c-0.1-1.1-0.2-2.2-0.6-3.2
+			c-0.3-1-0.8-1.9-1.4-2.6c-0.6-0.8-1.4-1.4-2.3-1.8c-0.9-0.5-1.9-0.7-3.1-0.7c-1.2,0-2.3,0.2-3.2,0.7c-0.9,0.5-1.7,1.1-2.4,1.8
+			c-0.6,0.8-1.1,1.6-1.5,2.6c-0.3,1-0.6,2-0.6,3.1H192.5z"/>
+		<path class="st0" d="M195.3,67.8v-1.3h3.7v-4.2c0-0.7,0.1-1.3,0.4-1.9s0.6-0.9,1-1.3c0.4-0.3,0.9-0.6,1.4-0.7s1.1-0.2,1.7-0.2
+			c0.5,0,1,0.1,1.8,0.2v1.3c-0.7-0.1-1.3-0.2-1.8-0.2c-0.8,0-1.6,0.2-2.1,0.6c-0.6,0.4-0.9,1.1-0.9,2.3v4.1h4.3v1.3h-4.3v19.1H199
+			V67.8H195.3z"/>
+	</g>
+</g>
+</svg>
+    </div>    
+</div>
+<div class="cs-section">    
+    <div class="container"> 
+        <h2 class="title-centered">Branding Sous Chef</h2>
+            <p>
+                As an addition to Samsung’s line of smart kitchen appliances, it made perfect sense to family the smart stove brand with Samsung’s Family Hub refrigerator. The smart stove was named “Sous Chef” which captures the stove’s purpose of assisting and enabling the home chef to create quality food.
+            </p>
+            <p>
+                For cohesiveness, Sous Chef adopted Samsung’s brand color palette and type.
+            </p>
+            <div class="img-centered u-max-full-width" style="margin-top: 10%">
+                <img src="images/ss-stove/brand-elements-small.png" alt="Sous Chef Type & Color Palette" class="visible-mobile u-max-full-width">
+                <img src="images/ss-stove/brand-elements-large.png" alt="Sous Chef Type & Color Palette" class="hidden-mobile u-max-full-width">
+            </div>
+    </div>
+</div>
+    
+<!-- Looking Forward -->
+<div class="teal-section"> 
+    <div class="container"> 
+        <h2 class="title-centered white-type">Looking Forward</h2>
+        <p class="white-type">
+           If this were a real product, we would continue conducting tests to see how the interface’s navigation could be improved and observe how people might use each feature. We would also build out and test the onboarding experience. The goal was to make a smart stove that would improve the user’s cooking experience and streamline everyday tasks. I also designed a companion app that expanded upon the stove features, but the stove’s features also needed to be effective as a stand-alone.
+         </p>
+        <p class="white-type">
+            There also is opportunity in exploring how Sous Chef and Family Hub may work together. If Family Hub has access to calendars, maybe Sous Chef could suggest an alternative time for an automated task if a meeting was moved up. Perhaps if Family Hub know all the ingredients it contains, it could automatically check off those ingredients in the recipe you plan to make in the <a href="souschef-app-casestudy.html" style="color: #4b4c56"> Companion App.</a>
+        </p>
+        <p class="white-type">
+        Safety notifications could possibly also appear on other synced smart appliances, your computer or car. As IoT continues to synergize our appliances and connect us to our homes, users will grow more comfortable with appliances managing the behind the scenes. Stovetop sensors could sense if something boils over and turn down the heat immediately.
+        </p>
+        <p class="white-type">
+        Voice control was a feature that didn’t make our MVP but generated some interest. Some users were interested in the ability to control the stove without having to touch anything with their greasy fingers. 
+        </p>
+    </div>
+</div>      
+    
+<!-- Reflections -->
+<div class="cs-section gray-section"> 
+    <div class="container"> 
+        <h3 class="title-centered">Reflections</h3>
+        <h2 class="title-centered">The Right Focus</h2>
+        <p>
+           Designing a new product can seem to have endless possibilities in the beginning. By investigating who would use this product and how, your goals are directed by the needs of the user. If the user doesn’t find your product useful nor worth the price, then why bother. 
+        </p>
+        <h2 class="title-centered" style="margin-top:10%">Don’t Be Afraid to Re-think Your Ideas</h2>
+        <p>
+           This project would have easily taken a team at least a year to have a product ready for market. I got a taste of what it was like to break new ground. It meant I was going to make a lot of mistakes and scrap a lot of unsuccessful ideas. There were lots of ideas I thought were brilliant but discovered their flaws in testing. It was a fun and humbling experience. Testing my ideas in the real world gives me insight and leads me to places I would have never considered. The result was a more solid and intuitive product.
+        </p>
+        <h2 class="title-centered" style="margin-top:10%">Getting Useful Data</h2>
+        <p>
+           Finding useful data in research is challenging, especially when you have a niche market. A vast majority of those I interviewed and surveyed indicated that they weren’t willing to pay a premium for a smart stove. There was a point where I started thinking that this was a bad idea altogether and considered scrapping this project. However, I remembered that this was going to be a niche market and that meant it’s not for everyone. From interviews, I started to form an image of who my target was and discovered the questions I should be asking. In the mass survey, I added filters to maximize the number of useful responses. It was by no means perfect, but it did weed out some of the unuseful data.
+        </p>
+    </div>
+</div>  
+ 
+<!-- Other Case Studies -->
+<div> 
+    <div class="container">
+        <h3 class="title-centered">Read Other Case Studies</h3>
+
+        <div class="row">
+            <div class="one-half column" style="margin-top: 5%">
+                <div class="img-centered"><a href="souschef-app-casestudy.html"><img class="u-max-full-width" src="images/home/SousChef_App_Thumb.jpg"/></a></div>
+                <h4 class="h4-title-centered line-space">Sous Chef Companion App</h4>
+                <div class="title-centered work-leadin">A SMARTER WAY TO COOK</div>
+            </div>
+            <div class="one-half column" style="margin-top: 5%">
+                <div class="img-centered" style="width:72%"><a href="popeats-casestudy.html"><img class="u-max-full-width" src="images/home/PopEats_Thumb.jpg"/></a></div>
+                <h4 class="h4-title-centered line-space">PopEats Web App</h4>
+                <div class="title-centered work-leadin">NEW DINING EXPERIENCES</div>
+            </div>
+        </div>
+
     </div>
 </div>
     

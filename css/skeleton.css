@@ -241,8 +241,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #53dbd8;
+  border-color: #53dbd8;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -562,6 +562,29 @@ a.nav-active {
     background-size: cover;
     margin-bottom: 5rem;
 }
+.what-I-made {
+    background: url('souschef-hero.jpg') bottom center no-repeat; 
+    background-size: cover;
+    margin-bottom: 5rem;
+    padding: 3rem 0 24rem 0;
+}
+.ui-elements {
+    background: url('3d-elements.jpg') bottom center no-repeat; 
+    background-size: cover;
+    margin-bottom: 5rem;
+    padding: 3rem 0 24rem 0;
+}
+.gradient-bg{
+    background: #034EA2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #403B4A , #E7E9BB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00b3f0, #034ea2 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+.logo-samsung {
+    text-align: center;
+    width: 25rem;
+    padding: 15rem 0;
+}
 
 .logo-position {
     text-align: center;
@@ -632,6 +655,13 @@ a.cs-nav-color{
     background-color: #f4f4f4;
     padding: 5rem 0rem;
 }
+.teal-section {
+    background-color: #3cbebc;
+    padding: 5rem 0rem;
+}
+.white-type {
+    color: #ffffff;
+}
 .design-challenge {
     float: left;
     text-align: center;
@@ -671,6 +701,21 @@ p.descriptor {
     font-size: 1.7rem;
     text-align: center;
 }
+.img-descriptor {
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #acb4b7;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.test-descriptor {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #3cbebc;
+    text-align: center;
+    padding-top: 2%;
+}
 img.icon {
     width: 200px;
 }
@@ -680,14 +725,20 @@ img.icon-small {
 .teal {
     color: #3cbebc;
 }
+.hidden-mobile {
+  display: none !important;
+}
 @media (min-width: 550px) { 
     .cs-title { width: 50rem; margin: 0 auto; padding: 7rem 0 3rem 0; }
     .project-process { width: 40rem; margin: 0 auto; padding-bottom: 6rem; }
     .title-centered { margin-bottom: 3rem;}
     .cs-section { margin-bottom: 5rem; }
     .quote-section { margin-bottom: 12rem; }
-    .inset {padding: 3rem;}
-    p.descriptor {font-size: 2rem;}
+    .inset { padding: 3rem; }
+    p.descriptor { font-size: 2rem; }
+    .what-I-made { padding: 3rem 0 36rem 0; }
+    .logo-samsung { width: 35rem; }
+
 }
 
 @media (min-width: 750px) {
@@ -704,6 +755,8 @@ img.icon-small {
     .design-challenge { text-align: left; }
     .dc-spacing { padding-left: 2rem;}
     .inset {padding: 5rem;}
+    .visible-mobile { display: none !important; }
+    .hidden-mobile { display: inline !important; }
 }
 
 @media (min-width: 1000px){
@@ -714,8 +767,14 @@ img.icon-small {
     .title-centered { margin-bottom: 5rem;}
     .cs-section { margin-bottom: 10rem; }
     .quote-section { margin-bottom: 15rem; }
-    .gray-section .light-gray-section{ padding: 10rem 0rem; margin-bottom: 10rem; }
+    .gray-section .light-gray-section .teal-section { padding: 10rem 0rem; margin-bottom: 10rem; }
+    .what-I-made { padding: 5rem 0 50rem 0; }
+    .logo-samsung { width: 45rem; padding: 20rem 0;}
 }
+@media (min-width: 1200px){
+    .what-I-made .ui-elements { padding: 5rem 0 70rem 0; }
+}
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer-rule {
