@@ -142,7 +142,7 @@ body {
   color: #4d4d4d; 
   -webkit-font-smoothing: antialiased;}
 body {
-	 padding: 0px 0 50px 0;
+
 	 font-size: 19px;
 	 min-height: 100%;
 	 font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -158,12 +158,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 h1 { font-size: 5.5rem; line-height: 1.05;  letter-spacing: -.1rem; font-weight: 500; }
-h2 { font-size: 4rem; line-height: 1.15; font-weight: 500; }
+h2 { font-size: 4rem; line-height: 1.15; letter-spacing: .13rem; font-weight: 600; }
 h3 { font-size: 3.6rem; line-height: 1.3;  letter-spacing: -.1rem; font-weight: 500; }
 h4 { font-size: 1.9rem; line-height: 1.35; letter-spacing: -.08rem; font-weight: 600; }
 h5 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: -.05rem; font-weight: 600; }
 h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
-blockquote { font-family: "PTSerifW01-BookItalic"; font-size: 4.2rem; line-height: 1.6; font-style: italic; color: #3cbebc; text-align: center; }
+blockquote { font-family: "PTSerifW01-BookItalic"; font-size: 4.2rem; line-height: 1.6; font-style: italic; color: #ACB4B7; text-align: center; }
 p {
   margin-top: 0;
   font-family: "PT Serif", "Georgia", "Times", "Times New Roman", serif;
@@ -179,7 +179,7 @@ p {
   h4 { font-size: 2.3rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.8rem; }
-  p { font-size: 2.3rem; line-height: 3.4rem;}
+  p { font-size: 2.3rem; line-height: 3.6rem;}
   blockquote {font-size: 5rem; }
     
 }
@@ -187,12 +187,12 @@ p {
 /* Larger than desktop */
 @media (min-width: 1200px) {
   h1 { font-size: 9.3rem; }
-  h2 { font-size: 5.8rem; }
+  h2 { font-size: 5.4rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 2.6rem; }
   h5 { font-size: 2.2rem; }
   h6 { font-size: 1.8rem; }
-  p { font-size: 2.6rem; line-height: 3.8rem;}
+  p { font-size: 2.6rem; line-height: 4rem;}
   blockquote {font-size: 6rem;}
 }
 
@@ -216,10 +216,10 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 46px;
-  padding: 2px 30px 0px 30px;
+  padding: 4px 30px 2px 30px;
   color: #3cbebc;
   text-align: center;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -265,6 +265,10 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
+
+@media (min-width: 750px) {
+    .button {font-size: 1.5rem; padding: 4px 25px 2px 25px;}
+}
 
 
 /* Forms
@@ -438,25 +442,31 @@ hr {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 svg.logo {
-    width: 11rem;
+    width: 8rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .name {
-    padding-top: 1.7rem;
-    font-size: 3.2rem;
+    padding-top: 2rem;
+    font-size: 2.6rem;
     font-weight: 100;
-    color: #4c4c56;
+    color: #ffffff;
 }
 .logo-header {
-    background-color: #e2e2e2;
-    padding: 8rem 2rem 0.5rem 2rem;
+    background-color: #252525;
+    padding: 3.7rem 0rem 0.4rem 0rem;
     margin-left: auto;
     margin-right: auto;
+    width: 25rem;
 }
 p.designer {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.nav-bar{
+    background: #252525;
+    padding-bottom: 1.4rem;
 }
 nav.home-nav-container {
     margin: 0 auto;
@@ -478,8 +488,8 @@ nav div a:hover {
 }
 a.nav-active {
     font-size: 2.2rem;
-    color: #3cbebc;
-    border-bottom: solid 2px;
+    color: #ffffff;
+    border-bottom: solid #3cbebc 2px;
     float:left;
     display: inline;
     width: 29%;  
@@ -487,47 +497,53 @@ a.nav-active {
     margin: 0 0.7rem;
 }
 
-@media (min-width: 400px) {
-    .logo-header { width: 30rem; } 
+@media (min-width: 400px) { 
     nav { width: 34rem; }
 }
 
 @media (min-width: 550px) {
-    .logo-header { width: 30rem; }
     nav.home-nav-container { width: 34rem; }
 }
 
 @media (min-width: 750px) {
-    .logo-header { width: 32rem; } 
-    svg.logo {width: 12rem; padding-top: 1.8rem; }
-    .name { font-size: 3.2rem; padding-top: 2rem; }
-    p.designer { font-size: 1.7rem; padding-bottom: 0.5rem; }
+    .logo-header { width: 31rem; padding: 4.5rem 0rem 1rem 0rem;} 
+    svg.logo {width: 10.5rem; }
+    .name { font-size: 3.2rem; padding-top: 2.6rem; }
+    p.designer { font-size: 1.7rem; padding-top: 0.5rem; }
     nav.home-nav-container { width: 36rem; }
 }
 
 @media (min-width: 1000px) {
-    .logo-header { width: 45rem; } 
-    svg.logo { width: 16rem; padding-top: 3.2rem; }
-    .name { font-size: 4.4rem; padding-top: 3.2rem; }
-    p.designer { font-size: 2.1rem; padding-top: 1rem; padding-bottom: 2rem; }
+    .logo-header { width: 36rem; padding: 5.1rem 0rem 1.5rem 0rem;} 
+    svg.logo {width: 12rem; }
+    .name { font-size: 3.7rem; padding-top: 3.2rem; }
+    p.designer { font-size: 1.9rem; padding-top: 0.8rem; }
     nav.home-nav-container { width: 49rem; padding-top: 2rem; }
-    nav div a.home-nav { width: 29%; margin: 2.4rem 1rem; padding-bottom: 1rem; font-size: 2rem; }
-    a.nav-active { font-size: 3rem; margin: 2.4rem 1rem; padding-bottom: 1rem;}
+    nav div a.home-nav { width: 29%; margin: 1rem 1rem 0.5rem 1rem; font-size: 2rem; }
+    a.nav-active { font-size: 3rem; margin: 1rem 1rem 0.5rem 1rem; padding-bottom: 1rem;}
 }
 
 @media (min-width: 1200px) {
-    .logo-header { width: 58rem; } 
-    svg.logo {width: 21rem; padding-top: 5.8rem; }
-    .name { font-size: 5.6rem; padding-top: 4.2rem; }
-    p.designer { font-size: 2.3rem; padding-top: 2rem; padding-bottom: 3.3rem; }
     nav.home-nav-container { width: 62rem; }
-    nav div a.home-nav { width: 29%; margin: 3.6rem 1.2rem; padding-bottom: 1.8rem; font-size: 2.5rem; }
-    a.nav-active { margin: 3.6rem 1.2rem; padding-bottom: 1.8rem; font-size: 3.9rem; }
     
 }
 
 /* Home Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.home-header {
+    background: url('home-header.jpg') bottom center no-repeat; 
+    background-size: cover;
+    padding: 5rem 0;
+}
+.souschef-stove-home {
+    background: url('souschef-home-bg-mobile.jpg') bottom center no-repeat; 
+    background-size: cover;
+    padding: 4rem 0 20rem 0;
+}
+.pop-eats-home{
+    margin-top: 5%; 
+    padding: 0 5rem; 
+}
 .work-left {
     text-align: center;
     vertical-align: middle;
@@ -546,6 +562,14 @@ a.nav-active {
 @media (min-width: 750px) {
     .work-left { text-align: left; }
     .work-right { text-align: right; }
+    .souschef-stove-home {background: url('souschef-home-bg.jpg') auto no-repeat; padding: 7rem 0; }
+    .pop-eats-home { border-left: 1px #e2e2e2 solid}
+    .cs-home-title{ font-size: 4.5rem; margin-top: 1.25rem }
+}
+
+@media (min-width: 1000px) {
+    .home-header { padding: 9rem 0;}
+    .souschef-stove-home {padding: 10rem 0; }
 }
 
 /* Smaller than tablet */
@@ -562,6 +586,16 @@ a.nav-active {
     background-size: cover;
     margin-bottom: 5rem;
 }
+.souschef-app-intro {
+    background: url('stove-app-hero-bw.jpg') bottom center no-repeat; 
+    background-size: cover;
+    margin-bottom: 5rem;
+}
+.popeats-intro {
+    background: url('popeats-hero-bw.jpg') bottom center no-repeat; 
+    background-size: cover;
+    margin-bottom: 5rem;
+}
 .what-I-made {
     background: url('souschef-hero.jpg') bottom center no-repeat; 
     background-size: cover;
@@ -573,6 +607,13 @@ a.nav-active {
     background-size: cover;
     margin-bottom: 5rem;
     padding: 3rem 0 24rem 0;
+}
+
+.ss-app-smartrecipes-hero {
+    background: url('stove-app-hero.jpg') top center no-repeat; 
+    background-size: cover;
+    margin-bottom: 5rem;
+    padding: 24rem 0 24rem 0;
 }
 .gradient-bg{
     background: #034EA2; /* fallback for old browsers */
@@ -647,6 +688,11 @@ a.cs-nav-color{
     text-align: center;
     margin: 5rem 0;
 }
+
+.icon-centered {
+    text-align: center;
+    margin: 2rem 0;
+}
 .gray-section {
     background-color: #e2e2e2;
     padding: 5rem 0rem;
@@ -686,8 +732,8 @@ a.cs-nav-color{
 }
 .border-box {
     background: rgba(255, 255, 255, 0.95);
-    padding: 8rem;
-    margin-top: 3rem;
+    padding: 5rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     border: 1px solid #e2e2e2;
 }
@@ -700,6 +746,7 @@ a.cs-nav-color{
 p.descriptor {
     font-size: 1.7rem;
     text-align: center;
+    line-height: 2.4rem;
 }
 .img-descriptor {
     font-size: 1.7rem;
@@ -728,6 +775,9 @@ img.icon-small {
 .hidden-mobile {
   display: none !important;
 }
+.logo-popeats {
+    width: 23rem;    
+}
 @media (min-width: 550px) { 
     .cs-title { width: 50rem; margin: 0 auto; padding: 7rem 0 3rem 0; }
     .project-process { width: 40rem; margin: 0 auto; padding-bottom: 6rem; }
@@ -735,20 +785,21 @@ img.icon-small {
     .cs-section { margin-bottom: 5rem; }
     .quote-section { margin-bottom: 12rem; }
     .inset { padding: 3rem; }
-    p.descriptor { font-size: 2rem; }
+    p.descriptor { font-size: 2rem; line-height: 3.2rem;}
     .what-I-made { padding: 3rem 0 36rem 0; }
     .logo-samsung { width: 35rem; }
-
 }
 
 @media (min-width: 750px) {
     .logo-position { text-align: left; }
-    .logo-cs { margin-top: 4rem; display: inline; }
+    .logo-cs { margin-top: 4rem; }
     .cs-name-white { margin-top: 4rem; padding-left: 1rem; display: inline; }
     .cs-nav { margin-top: 9.8rem; padding-top: 0rem; }
     .project-process { width: 40rem; line-height: 2.5rem; margin: 0 auto; padding-bottom: 8rem; }
     .float-right{ text-align: right; }
     .souschef-stove-intro { margin-bottom: 6rem;}
+    .souschef-app-intro { margin-bottom: 6rem;}
+    .popeats-intro { margin-bottom: 6rem;}
     .title-centered { margin-bottom: 4rem;}
     .cs-section { margin-bottom: 6rem; }
     .quote-section { margin-bottom: 14rem; }
@@ -757,19 +808,27 @@ img.icon-small {
     .inset {padding: 5rem;}
     .visible-mobile { display: none !important; }
     .hidden-mobile { display: inline !important; }
+    .ss-app-smartrecipes-hero { margin-bottom: 6rem; padding: 30rem 0 30rem 0;}
+    .border-box { padding: 8rem 10rem;}
+    .logo-popeats { width: 26rem; }
 }
-
 @media (min-width: 1000px){
     .cs-title { width: 50rem; margin: 0 auto; padding: 7rem 0 3rem 0; }
     .project-time { font-size: 2.6rem; }
     .project-process { font-size: 2rem; width: 45rem; line-height: 3.2rem; margin: 0 auto; padding-bottom: 8rem; }
     .souschef-stove-intro { margin-bottom: 10rem;}
+    .souschef-app-intro { margin-bottom: 10rem;}
+    .popeats-intro { margin-bottom: 10rem;}
     .title-centered { margin-bottom: 5rem;}
     .cs-section { margin-bottom: 10rem; }
     .quote-section { margin-bottom: 15rem; }
-    .gray-section .light-gray-section .teal-section { padding: 10rem 0rem; margin-bottom: 10rem; }
+    .gray-section { padding-top: 10rem; margin-bottom: 10rem; }
+    .light-gray-section { padding-top: 10rem; margin-bottom: 10rem; }
+    .teal-section { padding-top: 10rem; }
     .what-I-made { padding: 5rem 0 50rem 0; }
     .logo-samsung { width: 45rem; padding: 20rem 0;}
+    .logo-popeats { width: 30rem; }
+    .ss-app-smartrecipes-hero { margin-bottom: 10rem; padding: 40rem 0 40rem 0;}
 }
 @media (min-width: 1200px){
     .what-I-made .ui-elements { padding: 5rem 0 70rem 0; }
